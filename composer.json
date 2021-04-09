@@ -1,0 +1,20 @@
+{
+    "name": "mohammad-alavi/apiato-debugger",
+    "description": "An Apiato container which helps to debug requests and queries",
+    "type": "apiato-container",
+    "license": "MIT",
+    "require": {
+        "jenssegers/agent": "^2.6.4"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "barryvdh/laravel-debugbar": "^3.5.2"
+    },
+    "extra": {
+        "apiato": {
+            "container": {
+                "name": "Debugger"
+            }
+        }
+    }
+}
