@@ -1,5 +1,5 @@
 {
-    "name": "mohammad-alavi/apiato-debugger",
+    "name": "apiato/debugger-container",
     "description": "An Apiato container which helps to debug requests and queries",
     "type": "apiato-container",
     "license": "MIT",
