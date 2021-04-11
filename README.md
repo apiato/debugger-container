@@ -1,3 +1,3 @@
 # [Apiato](https://github.com/apiato/apiato) Debugger Container
 
-An Apiato container which helps to debug requests and queries.
+This Apiato container provides a simple and easy way to monitor and log all the HTTP requests coming to your application.
