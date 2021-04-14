@@ -4,7 +4,6 @@ namespace App\Containers\VendorSection\Debugger\Values;
 
 use App\Ship\Parents\Values\Value;
 use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Config;
 use Monolog\Formatter\LineFormatter;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
@@ -27,8 +26,8 @@ class RequestsLogger extends Value
     private function prepareConfigs(): void
     {
         $this->environment = App::environment();
-        $this->debuggingEnabled = Config::get("debugger.requests.debug");
-        $this->logFile = Config::get("debugger.requests.log_file");
+        $this->debuggingEnabled = config("debugger.requests.debug");
+        $this->logFile = config("debugger.requests.log_file");
     }
 
     private function prepareLogger(): void

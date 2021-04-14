@@ -3,7 +3,6 @@
 namespace App\Containers\VendorSection\Debugger\Values;
 
 use App\Ship\Parents\Values\Value;
-use Illuminate\Support\Facades\Config;
 use Jenssegers\Agent\Facades\Agent;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -21,8 +20,8 @@ class Output extends Value
         $this->request = $request;
         $this->response = $response;
 
-        $this->responseDataCut = Config::get("debugger.requests.response_show_first");
-        $this->tokenDataCut = Config::get("debugger.requests.token_show_first");
+        $this->responseDataCut = config("debugger.requests.response_show_first");
+        $this->tokenDataCut = config("debugger.requests.token_show_first");
     }
 
     public function get(): string

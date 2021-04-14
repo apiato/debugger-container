@@ -5,7 +5,6 @@ namespace App\Containers\VendorSection\Debugger\Tasks;
 use App\Ship\Parents\Tasks\Task;
 use DateTimeInterface;
 use DB;
-use Illuminate\Support\Facades\Config;
 use Log;
 
 class QueryDebuggerTask extends Task
@@ -16,11 +15,11 @@ class QueryDebuggerTask extends Task
      */
     public function run(): void
     {
-        $debuggerEnabled = Config::get('debugger.queries.debug');
+        $debuggerEnabled = config('debugger.queries.debug');
 
         if ($debuggerEnabled) {
-            $consoleOutputEnabled = Config::get('debugger.queries.output.console');
-            $logOutputEnabled = Config::get('debugger.queries.output.log');
+            $consoleOutputEnabled = config('debugger.queries.output.console');
+            $logOutputEnabled = config('debugger.queries.output.log');
 
             DB::listen(function ($event) use ($consoleOutputEnabled, $logOutputEnabled) {
                 $bindings = $event->bindings;
