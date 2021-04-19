@@ -4,8 +4,6 @@ namespace App\Containers\VendorSection\Debugger\Providers;
 
 use App\Containers\VendorSection\Debugger\Tasks\QueryDebuggerTask;
 use App\Ship\Parents\Providers\MainProvider;
-use Barryvdh\Debugbar\Facade as Debugbar;
-use Barryvdh\Debugbar\ServiceProvider as DebugbarServiceProvider;
 use Jenssegers\Agent\AgentServiceProvider;
 use Jenssegers\Agent\Facades\Agent;
 
@@ -23,16 +21,14 @@ class MainServiceProvider extends MainProvider
      */
     public array $serviceProviders = [
         AgentServiceProvider::class,
-        MiddlewareServiceProvider::class,
-        DebugbarServiceProvider::class
+        MiddlewareServiceProvider::class
     ];
 
     /**
      * Container Aliases
      */
     public array $aliases = [
-        'Agent' => Agent::class,
-        'Debugbar' => Debugbar::class,
+        'Agent' => Agent::class
     ];
 
     /**
@@ -42,6 +38,6 @@ class MainServiceProvider extends MainProvider
     {
         parent::register();
 
-        (new QueryDebuggerTask)->run();
+        app(QueryDebuggerTask::class)->run();
     }
 }
