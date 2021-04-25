@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\VendorSection\Debugger\Middlewares;
+namespace App\Containers\Vendor\Debugger\Middlewares;
 
-use App\Containers\VendorSection\Debugger\Values\Output;
-use App\Containers\VendorSection\Debugger\Values\RequestsLogger;
+use App\Containers\Vendor\Debugger\Values\Output;
+use App\Containers\Vendor\Debugger\Values\RequestsLogger;
 use App\Ship\Parents\Middlewares\Middleware;
 use Closure;
 use Illuminate\Http\Request;

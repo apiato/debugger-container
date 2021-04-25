@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Containers\VendorSection\Debugger\Providers;
+namespace App\Containers\Vendor\Debugger\Providers;
 
-use App\Containers\VendorSection\Debugger\Tasks\QueryDebuggerTask;
+use App\Containers\Vendor\Debugger\Tasks\QueryDebuggerTask;
 use App\Ship\Parents\Providers\MainProvider;
 use Jenssegers\Agent\AgentServiceProvider;
 use Jenssegers\Agent\Facades\Agent;

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Containers\VendorSection\Debugger\Providers;
+namespace App\Containers\Vendor\Debugger\Providers;
 
-use App\Containers\VendorSection\Debugger\Middlewares\RequestsMonitorMiddleware;
+use App\Containers\Vendor\Debugger\Middlewares\RequestsMonitorMiddleware;
 use App\Ship\Parents\Providers\MiddlewareProvider;
 
 class MiddlewareServiceProvider extends MiddlewareProvider
