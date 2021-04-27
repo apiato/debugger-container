@@ -1,10 +1,11 @@
 {
     "name": "apiato/debugger-container",
-    "description": "An Apiato container which helps to debug requests and queries",
+    "description": "An Apiato container which helps to debug everything",
     "type": "apiato-container",
     "license": "MIT",
     "require": {
-        "jenssegers/agent": "^2.6.4"
+        "jenssegers/agent": "^2.6.4",
+        "laravel/telescope": "^4.4.9"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
