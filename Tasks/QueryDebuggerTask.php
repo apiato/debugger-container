@@ -15,11 +15,11 @@ class QueryDebuggerTask extends Task
      */
     public function run(): void
     {
-        $debuggerEnabled = config('debugger.queries.debug');
+        $debuggerEnabled = config('vendor-debugger.queries.debug');
 
         if ($debuggerEnabled) {
-            $consoleOutputEnabled = config('debugger.queries.output.console');
-            $logOutputEnabled = config('debugger.queries.output.log');
+            $consoleOutputEnabled = config('vendor-debugger.queries.output.console');
+            $logOutputEnabled = config('vendor-debugger.queries.output.log');
 
             DB::listen(function ($event) use ($consoleOutputEnabled, $logOutputEnabled) {
                 $bindings = $event->bindings;
