@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Containers\Vendor\Debugger\Providers;
+namespace Apiato\Containers\Debugger\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

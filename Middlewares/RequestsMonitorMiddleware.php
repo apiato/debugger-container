@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Containers\Vendor\Debugger\Middlewares;
+namespace Apiato\Containers\Debugger\Middlewares;
 
-use App\Containers\Vendor\Debugger\Values\Output;
-use App\Containers\Vendor\Debugger\Values\RequestsLogger;
+use Apiato\Containers\Debugger\Values\Output;
+use Apiato\Containers\Debugger\Values\RequestsLogger;
 use App\Ship\Parents\Middlewares\Middleware;
 use Closure;
 use Illuminate\Http\Request;

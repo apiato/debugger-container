@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Containers\Vendor\Debugger\Tasks;
+namespace Apiato\Containers\Debugger\Tasks;
 
 use App\Ship\Parents\Tasks\Task;
 use DateTimeInterface;

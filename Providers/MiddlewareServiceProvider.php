@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Containers\Vendor\Debugger\Providers;
+namespace Apiato\Containers\Debugger\Providers;
 
-use App\Containers\Vendor\Debugger\Middlewares\RequestsMonitorMiddleware;
+use Apiato\Containers\Debugger\Middlewares\RequestsMonitorMiddleware;
 use App\Ship\Parents\Providers\MiddlewareProvider;
 
 class MiddlewareServiceProvider extends MiddlewareProvider

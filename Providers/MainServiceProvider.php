@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Containers\Vendor\Debugger\Providers;
+namespace Apiato\Containers\Debugger\Providers;
 
-use App\Containers\Vendor\Debugger\Tasks\QueryDebuggerTask;
-use App\Containers\Vendor\Documentation\Providers\DebuggerServiceProvider;
+use Apiato\Containers\Debugger\Tasks\QueryDebuggerTask;
 use App\Ship\Parents\Providers\MainProvider;
 use Jenssegers\Agent\AgentServiceProvider;
 use Jenssegers\Agent\Facades\Agent;
@@ -23,7 +22,6 @@ class MainServiceProvider extends MainProvider
     public array $serviceProviders = [
         AgentServiceProvider::class,
         MiddlewareServiceProvider::class,
-	    DebuggerServiceProvider::class,
     ];
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Containers\Vendor\Debugger\Values;
+namespace Apiato\Containers\Debugger\Values;
 
 use App\Ship\Parents\Values\Value;
 use Jenssegers\Agent\Facades\Agent;

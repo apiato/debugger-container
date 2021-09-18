@@ -16,6 +16,16 @@
             "container": {
                 "name": "Debugger"
             }
+        },
+        "laravel": {
+            "providers": [
+                "Apiato\\Containers\\Debugger\\Providers\\DebuggerServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Apiato\\Containers\\Debugger\\": ""
         }
     }
 }
